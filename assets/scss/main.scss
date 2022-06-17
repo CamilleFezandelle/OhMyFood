@@ -1,14 +1,18 @@
+// Utils
+@import './Utils/variables';
+@import './Utils/mixins';
+
 // Base
 @import './Base/reset';
-
-// Components
+@import './Base/typography';
 
 // Layout
+@import './Layout/header';
+
+// Components
 
 // Pages
 
 // Themes
-
-// Utils
 
 // Vendors
