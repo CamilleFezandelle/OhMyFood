@@ -61,6 +61,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
+  font-family: "Roboto", sans-serif;
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -146,6 +147,27 @@ header .bloc {
 }
 .logo__img {
   width: 180px;
+}
+
+.explore__list {
+  display: flex;
+  justify-content: center;
+}
+
+.explore__text {
+  width: 90%;
+}
+.explore__text h1 {
+  padding: 10px 10% 10px 10%;
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: center;
+}
+.explore__text p {
+  padding: 10px 0;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
