@@ -48,14 +48,13 @@
     background-color: #ffffff;
     @include display-center;
     flex-direction: column;
-}
-
-.tutorial__title {
-    width: 100%;
-    padding: 0 5% 15px 5%;
-    p {
-        font-size: 1.6em;
-        font-weight: 700;
+    &__title {
+        width: 100%;
+        padding: 0 5% 15px 5%;
+        h1 {
+            font-size: 1.6em;
+            font-weight: 700;
+        }
     }
 }
 
@@ -67,16 +66,21 @@
     flex-direction: column;
 }
 
-.list {
+.restaurant-title {
+    padding: 0 5% 15px 5%;
+    width: 100%;
+    display: flex;
+    h1 {
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+}
+
+.restaurant-list {
     width: 80%;
+    margin: 20px 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-row-gap: 40px;
-}
-
-.list__card {
-    background-color: red;
-    height: 240px;
-    width: 100%;
 }
