@@ -1,9 +1,11 @@
+// flexbox centrage horizontal et vertical
 @mixin display-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+// police d'écriture de base du site
 @mixin font {
     font-family: 'Roboto', sans-serif;
 }

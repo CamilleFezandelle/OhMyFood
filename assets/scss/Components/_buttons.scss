@@ -1,0 +1,74 @@
+// Bouton "Explorer nos restaurants" page d'accueil du site
+.explore__button button {
+    @include font;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(355deg, $color-primary 0%, $color-secondary 100%);
+    border: none;
+    border-radius: 50px;
+    padding: 18px 30px;
+    &:active {
+        box-shadow: 0 5px 10px #d6d6d6;
+    }
+}
+
+// Bouton de fonctionnement page d'accueil du site
+.tutorial__step {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    width: 80%;
+    height: 82px;
+    border-radius: 20px;
+    padding: 0 5px 0 5px;
+    margin: 15px 0;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 5px 15px #d6d6d6;
+    transition: all 350ms;
+    z-index: 1;
+    i {
+        padding-left: 30px;
+        height: 18px;
+        width: 18px;
+        font-size: large;
+        color: #7e7e7e;
+        transition: all 350ms;
+    }
+    p {
+        font-size: 1.05em;
+        font-weight: 700;
+        padding-left: 35px;
+    }
+    &:active {
+        box-shadow: 0 5px 30px #d6d6d6;
+        background-color: #f5edff;
+        i {
+            color: $color-primary;
+        }
+    }
+    &::before {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        left: -15px;
+        background-color: $color-primary;
+        @include display-center;
+        color: #ffffff;
+        font-weight: 500;
+    }
+}
+
+.tutorial__step--card1::before {
+    content: '1';
+}
+
+.tutorial__step--card2::before {
+    content: '2';
+}
+
+.tutorial__step--card3::before {
+    content: '3';
+}

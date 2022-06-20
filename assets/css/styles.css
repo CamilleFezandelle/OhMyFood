@@ -121,6 +121,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 header .bloc {
   height: 100%;
@@ -197,22 +198,8 @@ header .bloc {
   text-align: center;
 }
 
-.explore__button button {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.1em;
-  font-weight: 500;
-  color: #ffffff;
-  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
-  border: none;
-  border-radius: 50px;
-  padding: 18px 30px;
-}
-.explore__button button:active {
-  box-shadow: 0 5px 10px #d6d6d6;
-}
-
 .tutorial {
-  height: 500px;
+  padding: 60px 0;
   width: 100%;
   background-color: #ffffff;
   display: flex;
@@ -230,6 +217,43 @@ header .bloc {
   font-weight: 700;
 }
 
+.section-restaurant-list {
+  padding: 60px 0;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 40px;
+}
+
+.list__card {
+  background-color: red;
+  height: 240px;
+  width: 100%;
+}
+
+.explore__button button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
+  border: none;
+  border-radius: 50px;
+  padding: 18px 30px;
+}
+.explore__button button:active {
+  box-shadow: 0 5px 10px #d6d6d6;
+}
+
 .tutorial__step {
   display: flex;
   align-items: center;
@@ -243,6 +267,7 @@ header .bloc {
   cursor: pointer;
   box-shadow: 0 5px 15px #d6d6d6;
   transition: all 350ms;
+  z-index: 1;
 }
 .tutorial__step i {
   padding-left: 30px;
