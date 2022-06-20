@@ -1,6 +1,28 @@
+.explore__localisation {
+    background-color: #eaeaea;
+    height: 55px;
+    @include display-center;
+}
+
+.explore__localisation-text {
+    @include display-center;
+    i {
+        padding-right: 10px;
+    }
+    p {
+        font-size: 1.05em;
+        font-weight: 500;
+    }
+}
+
 .explore__list {
+    background-color: #f6f6f6;
+    height: 325px;
+    padding: 60px 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .explore__text {
@@ -16,5 +38,18 @@
         font-size: 1.2em;
         font-weight: 300;
         text-align: center;
+    }
+}
+.explore__button button {
+    @include font;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(355deg, $color-primary 0%, $color-secondary 100%);
+    border: none;
+    border-radius: 50px;
+    padding: 18px 30px;
+    &:active {
+        box-shadow: 0 5px 10px #d6d6d6;
     }
 }
