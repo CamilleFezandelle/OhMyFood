@@ -116,6 +116,7 @@ header {
   width: 100%;
   height: 70px;
   position: fixed;
+  background-color: #ffffff;
   box-shadow: 0 1px 10px #a0a0a0;
   top: 0;
   left: 0;
@@ -208,6 +209,85 @@ header .bloc {
 }
 .explore__button button:active {
   box-shadow: 0 5px 10px #d6d6d6;
+}
+
+.tutorial {
+  height: 500px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tutorial__title {
+  width: 100%;
+  padding: 0 5% 15px 5%;
+}
+.tutorial__title p {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+.tutorial__step {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 80%;
+  height: 82px;
+  border-radius: 20px;
+  padding: 0 5px 0 5px;
+  margin: 15px 0;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #d6d6d6;
+  transition: all 350ms;
+}
+.tutorial__step i {
+  padding-left: 30px;
+  height: 18px;
+  width: 18px;
+  font-size: large;
+  color: #7e7e7e;
+  transition: all 350ms;
+}
+.tutorial__step p {
+  font-size: 1.05em;
+  font-weight: 700;
+  padding-left: 35px;
+}
+.tutorial__step:active {
+  box-shadow: 0 5px 30px #d6d6d6;
+  background-color: #f5edff;
+}
+.tutorial__step:active i {
+  color: #9356dc;
+}
+.tutorial__step::before {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  left: -15px;
+  background-color: #9356dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.tutorial__step--card1::before {
+  content: "1";
+}
+
+.tutorial__step--card2::before {
+  content: "2";
+}
+
+.tutorial__step--card3::before {
+  content: "3";
 }
 
 /*# sourceMappingURL=styles.css.map */
