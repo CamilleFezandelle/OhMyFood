@@ -27,7 +27,9 @@ footer {
         height: 70%;
     }
     &__information-row {
-        padding: 5px 0;
+        padding: 7px 0;
+        width: fit-content;
+        position: relative;
         a {
             color: #ffffff;
             font-weight: 500;
@@ -38,5 +40,20 @@ footer {
         &--proposer i {
             padding: 0 3px;
         }
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: #ffffff;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: 1px;
+            transition: all 300ms;
+        }
     }
+}
+
+.footer-container__information-row a:hover .footer-container__information-row::after {
+    width: 100%;
+    background-color: red;
 }
