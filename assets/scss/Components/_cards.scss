@@ -6,6 +6,12 @@
     height: 240px;
     width: 100%;
     overflow: hidden;
+    @include tablet {
+        height: 290px;
+    }
+    @include desk {
+        height: 350px;
+    }
 }
 
 .card__illustration {

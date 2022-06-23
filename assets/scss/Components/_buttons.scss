@@ -28,7 +28,6 @@
     cursor: pointer;
     box-shadow: 0 5px 15px #d6d6d6;
     transition: all 350ms;
-    z-index: 1;
     i {
         padding-left: 30px;
         height: 18px;
@@ -59,6 +58,9 @@
         @include display-center;
         color: #ffffff;
         font-weight: 500;
+    }
+    @include desk {
+        width: 27%;
     }
 }
 

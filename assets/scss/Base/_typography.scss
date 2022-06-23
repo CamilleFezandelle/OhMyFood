@@ -1,3 +1,10 @@
 html {
     scroll-behavior: smooth;
 }
+
+// adaptatation écran inférieure à 320px
+@media screen and (max-width: 319px) {
+    body {
+        width: max-content;
+    }
+}

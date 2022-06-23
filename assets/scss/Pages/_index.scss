@@ -16,6 +16,22 @@
     }
 }
 
+.explore__localisation-searchbar input {
+    background-color: rgba(255, 255, 255, 0);
+    height: 25px;
+    border: none;
+    &::placeholder {
+        font-size: 1.15em;
+        padding-left: 2px;
+        font-weight: 500;
+        color: #000000;
+        font-family: 'Roboto', sans-serif;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
 .explore__list {
     background-color: #f6f6f6;
     height: 325px;
@@ -57,6 +73,16 @@
             font-weight: 700;
         }
     }
+    &__step-list {
+        @include display-center;
+        flex-direction: column;
+        width: 100%;
+        @include desk {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+        }
+    }
 }
 
 // section restaurants
@@ -89,4 +115,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-row-gap: 40px;
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 60px;
+        grid-column-gap: 60px;
+    }
 }

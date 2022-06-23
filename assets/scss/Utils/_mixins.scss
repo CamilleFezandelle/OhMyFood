@@ -10,7 +10,22 @@
     font-family: 'Roboto', sans-serif;
 }
 
+// longueur maximale
 @mixin width-desk {
     max-width: 1440px;
     margin: auto;
+}
+
+// responsive tablets
+@mixin tablet {
+    @media screen and (min-width: $break-tablet) {
+        @content;
+    }
+}
+
+// responsive desktop
+@mixin desk {
+    @media screen and (min-width: $break-desktop) {
+        @content;
+    }
 }

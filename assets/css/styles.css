@@ -112,6 +112,11 @@ html {
   scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 319px) {
+  body {
+    width: max-content;
+  }
+}
 header {
   width: 100%;
   height: 70px;
@@ -215,6 +220,22 @@ footer {
   font-weight: 500;
 }
 
+.explore__localisation-searchbar input {
+  background-color: rgba(255, 255, 255, 0);
+  height: 25px;
+  border: none;
+}
+.explore__localisation-searchbar input::placeholder {
+  font-size: 1.15em;
+  padding-left: 2px;
+  font-weight: 500;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+}
+.explore__localisation-searchbar input:focus {
+  outline: none;
+}
+
 .explore__list {
   background-color: #f6f6f6;
   height: 325px;
@@ -260,6 +281,20 @@ footer {
   font-size: 1.6em;
   font-weight: 700;
 }
+.tutorial__step-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .tutorial__step-list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+  }
+}
 
 .section-restaurant-list {
   width: 100%;
@@ -294,6 +329,14 @@ footer {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-row-gap: 40px;
 }
+@media screen and (min-width: 768px) {
+  .restaurant-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 60px;
+    grid-column-gap: 60px;
+  }
+}
 
 .restaurant-cards {
   background-color: #ffffff;
@@ -302,6 +345,16 @@ footer {
   height: 240px;
   width: 100%;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .restaurant-cards {
+    height: 290px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant-cards {
+    height: 350px;
+  }
 }
 
 .card__illustration {
@@ -364,7 +417,6 @@ footer {
   cursor: pointer;
   box-shadow: 0 5px 15px #d6d6d6;
   transition: all 350ms;
-  z-index: 1;
 }
 .tutorial__step i {
   padding-left: 30px;
@@ -398,6 +450,11 @@ footer {
   align-items: center;
   color: #ffffff;
   font-weight: 500;
+}
+@media screen and (min-width: 992px) {
+  .tutorial__step {
+    width: 27%;
+  }
 }
 
 .tutorial__step--card1::before {
