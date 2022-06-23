@@ -1,1 +1,42 @@
 // section du footer
+footer {
+    background-color: #353535;
+    width: 100%;
+    height: 220px;
+    @include display-center;
+}
+
+.footer-container {
+    @include width-desk;
+    height: 180px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__title {
+        height: 30%;
+        display: flex;
+        align-items: center;
+        h1 {
+            font-family: 'Shrikhand', cursive;
+            color: #ffffff;
+            font-size: 1.3em;
+        }
+    }
+    &__information {
+        height: 70%;
+    }
+    &__information-row {
+        padding: 5px 0;
+        a {
+            color: #ffffff;
+            font-weight: 500;
+        }
+        i {
+            color: #ffffff;
+        }
+        &--proposer i {
+            padding: 0 3px;
+        }
+    }
+}

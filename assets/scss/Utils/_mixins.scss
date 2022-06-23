@@ -9,3 +9,8 @@
 @mixin font {
     font-family: 'Roboto', sans-serif;
 }
+
+@mixin width-desk {
+    max-width: 1440px;
+    margin: auto;
+}

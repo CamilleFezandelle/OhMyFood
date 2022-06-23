@@ -112,24 +112,18 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  padding-top: 70px;
-}
-
 header {
   width: 100%;
   height: 70px;
-  position: fixed;
   background-color: #ffffff;
-  box-shadow: 0 1px 10px #a0a0a0;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
 }
 header .bloc {
   height: 100%;
   position: relative;
+  box-shadow: 0 1px 10px #a0a0a0;
 }
 
 .back {
@@ -153,6 +147,51 @@ header .bloc {
 }
 .logo__img {
   width: 180px;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: auto;
+  height: 180px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-container__title {
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+.footer-container__title h1 {
+  font-family: "Shrikhand", cursive;
+  color: #ffffff;
+  font-size: 1.3em;
+}
+.footer-container__information {
+  height: 70%;
+}
+.footer-container__information-row {
+  padding: 5px 0;
+}
+.footer-container__information-row a {
+  color: #ffffff;
+  font-weight: 500;
+}
+.footer-container__information-row i {
+  color: #ffffff;
+}
+.footer-container__information-row--proposer i {
+  padding: 0 3px;
 }
 
 .explore__localisation {
@@ -203,6 +242,8 @@ header .bloc {
 }
 
 .tutorial {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px 0;
   width: 100%;
   background-color: #ffffff;
@@ -221,8 +262,14 @@ header .bloc {
 }
 
 .section-restaurant-list {
-  padding: 60px 0;
+  width: 100%;
   background-color: #f6f6f6;
+}
+
+.section-restaurant-container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 60px 0;
   display: flex;
   justify-content: center;
   align-items: center;
