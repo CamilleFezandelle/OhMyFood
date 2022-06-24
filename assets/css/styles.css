@@ -184,36 +184,25 @@ footer {
 }
 .footer-container__information {
   height: 70%;
+  display: flex;
+  flex-direction: column;
 }
 .footer-container__information-row {
   padding: 7px 0;
   width: fit-content;
   position: relative;
+  color: #ffffff;
 }
 .footer-container__information-row a {
   color: #ffffff;
   font-weight: 500;
 }
-.footer-container__information-row i {
-  color: #ffffff;
+.footer-container__information-row--icon-propose {
+  padding-right: 5px;
+  padding-left: 3px;
 }
-.footer-container__information-row--proposer i {
-  padding: 0 3px;
-}
-.footer-container__information-row::after {
-  content: "";
-  position: absolute;
-  background-color: #ffffff;
-  height: 3px;
-  width: 0;
-  left: 0;
-  bottom: 1px;
-  transition: all 300ms;
-}
-
-.footer-container__information-row a:hover .footer-container__information-row::after {
-  width: 100%;
-  background-color: red;
+.footer-container__information-row--icon-partenary {
+  padding-right: 5px;
 }
 
 .explore__localisation {

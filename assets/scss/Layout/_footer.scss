@@ -26,21 +26,23 @@ footer {
     &__information {
         height: 70%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     &__information-row {
         padding: 7px 0;
         width: fit-content;
         position: relative;
+        color: #ffffff;
         a {
             color: #ffffff;
             font-weight: 500;
         }
-        i {
-            color: #ffffff;
+        &--icon-propose {
+            padding-right: 5px;
+            padding-left: 3px;
         }
-        &--proposer i {
-            padding: 0 3px;
+        &--icon-partenary {
+            padding-right: 5px;
         }
     }
 }
