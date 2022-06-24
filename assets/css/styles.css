@@ -255,7 +255,7 @@ footer {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -408,6 +408,40 @@ footer {
     grid-row-gap: 60px;
     grid-column-gap: 60px;
   }
+}
+
+.background {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.background__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  border-radius: 20px 20px 0 0;
+  transform: translateY(-50px);
+  margin-bottom: -50px;
+}
+
+.section-menu-title {
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-menu-title h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.7em;
 }
 
 .restaurant-cards {
