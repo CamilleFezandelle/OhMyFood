@@ -28,13 +28,17 @@
 .section-menu-title {
     width: 90%;
     @include width-desk;
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
     h1 {
         font-family: 'Shrikhand', cursive;
         font-size: 1.7em;
+    }
+    i {
+        font-size: larger;
     }
 }
 
@@ -42,13 +46,16 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     @include tablet {
         flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
         width: 90%;
         @include width-desk;
     }
     &__title {
-        height: 15%;
+        height: 45px;
         width: 100%;
         display: flex;
         align-items: center;
@@ -69,18 +76,14 @@
         }
     }
     &__choice {
-        height: 85%;
+        height: 255px;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    &__choice-card {
-        height: 70px;
-        width: 100%;
-        background-color: #ffffff;
-        border-radius: 20px;
-        @include box-shadow;
+    &__choice--four {
+        height: 340px;
     }
 }
 
@@ -89,9 +92,12 @@
 .menu-desserts {
     height: 300px;
     width: 90%;
-    @include width-desk;
     @include tablet {
         width: 30%;
     }
     margin-bottom: 20px;
+}
+
+.menu-entrées--four {
+    height: 400px;
 }
