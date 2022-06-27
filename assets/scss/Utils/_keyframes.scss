@@ -3,7 +3,6 @@
         transform: rotate(0deg);
         border-top: 16px $color-primary solid;
         border-bottom: 16px $color-tertiary solid;
-        opacity: 1;
     }
 
     50% {
@@ -20,15 +19,20 @@
 
 @keyframes loader-opacity {
     0% {
+        z-index: 10;
+    }
+
+    60% {
         opacity: 1;
     }
 
-    99% {
-        opacity: 1;
+    95% {
+        z-index: 10;
+        opacity: 0;
     }
 
     100% {
-        opacity: 0;
         z-index: -10;
+        opacity: 0;
     }
 }
