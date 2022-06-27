@@ -554,6 +554,24 @@ footer {
   height: 100%;
   object-fit: cover;
 }
+.card__illustration--new {
+  position: relative;
+}
+.card__illustration--new::after {
+  content: "Nouveau";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #0a8d6d;
+  width: 95px;
+  height: 40px;
+  background-color: #99e2d0;
+  top: 10px;
+  right: 10px;
+  border-radius: 4px;
+}
 
 .card__information {
   height: 30%;

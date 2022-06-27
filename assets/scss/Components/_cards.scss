@@ -22,6 +22,22 @@
         height: 100%;
         object-fit: cover;
     }
+    &--new {
+        position: relative;
+        &::after {
+            content: 'Nouveau';
+            position: absolute;
+            @include display-center;
+            font-weight: 700;
+            color: #0a8d6d;
+            width: 95px;
+            height: 40px;
+            background-color: $color-tertiary;
+            top: 10px;
+            right: 10px;
+            border-radius: 4px;
+        }
+    }
 }
 
 .card__information {
