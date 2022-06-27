@@ -10,7 +10,7 @@
     padding: 18px 30px;
     cursor: pointer;
     &:active {
-        box-shadow: 0 5px 10px #d6d6d6;
+        @include box-shadow;
     }
 }
 
@@ -26,7 +26,7 @@
     margin: 15px 0;
     position: relative;
     cursor: pointer;
-    box-shadow: 0 5px 15px #d6d6d6;
+    @include box-shadow;
     transition: all 350ms;
     i {
         padding-left: 30px;
@@ -40,11 +40,14 @@
         font-size: 1.05em;
         font-weight: 700;
         padding-left: 35px;
+        transition: all 350ms;
     }
     &:active {
-        box-shadow: 0 5px 30px #d6d6d6;
         background-color: #f5edff;
         i {
+            color: $color-primary;
+        }
+        p {
             color: $color-primary;
         }
     }

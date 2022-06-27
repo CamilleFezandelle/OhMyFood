@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -160,7 +161,7 @@ header {
 header .bloc {
   height: 100%;
   position: relative;
-  box-shadow: 0 1px 10px #a0a0a0;
+  box-shadow: 0 5px 15px #d6d6d6;
 }
 
 .back {
@@ -297,6 +298,7 @@ footer {
 .explore__localisation-searchbar input {
   background-color: rgba(255, 255, 255, 0);
   height: 25px;
+  width: 140px;
   border: none;
 }
 .explore__localisation-searchbar input::placeholder {
@@ -433,10 +435,17 @@ footer {
   transform: translateY(-50px);
   margin-bottom: -50px;
 }
+@media screen and (min-width: 768px) {
+  .section-menu {
+    padding: 40px 0;
+  }
+}
 
 .section-menu-title {
   width: 90%;
-  height: 100px;
+  max-width: 1440px;
+  margin: auto;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -446,10 +455,76 @@ footer {
   font-size: 1.7em;
 }
 
-.restaurant-cards {
+.section-menu-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .section-menu-list {
+    flex-direction: row;
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+.section-menu-list__title {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.section-menu-list__title h2 {
+  font-weight: 400;
+  color: #000000;
+  padding-left: 2px;
+  padding-bottom: 4px;
+}
+.section-menu-list__title::after {
+  content: "";
+  position: absolute;
+  background-color: #99e2d0;
+  height: 3px;
+  width: 25px;
+  bottom: 9px;
+}
+.section-menu-list__choice {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-menu-list__choice-card {
+  height: 70px;
+  width: 100%;
   background-color: #ffffff;
   border-radius: 20px;
-  box-shadow: 0 3px 8px #d9d9d9;
+  box-shadow: 0 5px 15px #d6d6d6;
+}
+
+.menu-entrées,
+.menu-plats,
+.menu-desserts {
+  height: 300px;
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .menu-entrées,
+.menu-plats,
+.menu-desserts {
+    width: 30%;
+  }
+}
+
+.restaurant-cards {
+  box-shadow: 0 5px 15px #d6d6d6;
+  background-color: #ffffff;
+  border-radius: 20px;
   height: 240px;
   width: 100%;
   overflow: hidden;
@@ -509,7 +584,7 @@ footer {
   cursor: pointer;
 }
 .explore__button button:active {
-  box-shadow: 0 5px 10px #d6d6d6;
+  box-shadow: 0 5px 15px #d6d6d6;
 }
 
 .tutorial__step {
@@ -538,12 +613,15 @@ footer {
   font-size: 1.05em;
   font-weight: 700;
   padding-left: 35px;
+  transition: all 350ms;
 }
 .tutorial__step:active {
-  box-shadow: 0 5px 30px #d6d6d6;
   background-color: #f5edff;
 }
 .tutorial__step:active i {
+  color: #9356dc;
+}
+.tutorial__step:active p {
   color: #9356dc;
 }
 .tutorial__step::before {
