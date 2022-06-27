@@ -45,3 +45,50 @@
         color: black;
     }
 }
+
+// cards menus restaurants
+.section-menu-list {
+    &__choice-card {
+        overflow: hidden;
+        height: 70px;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 10px;
+        @include box-shadow;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__card-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 85%;
+        h3 {
+            color: #000000;
+            font-weight: 700;
+            font-size: 1.1em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        p {
+            color: #000000;
+            font-weight: 400;
+            font-size: 0.95em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    &__card-price {
+        display: flex;
+        align-items: flex-end;
+        p {
+            color: #000000;
+            font-weight: 700;
+            font-size: 1em;
+        }
+    }
+}
