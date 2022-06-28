@@ -325,7 +325,7 @@ footer {
 .explore__text {
   width: 90%;
 }
-.explore__text h1 {
+.explore__text h2 {
   padding: 10px 10% 10px 10%;
   font-size: 1.6em;
   font-weight: 700;
@@ -353,7 +353,7 @@ footer {
   width: 100%;
   padding: 0 5% 15px 5%;
 }
-.tutorial__title h1 {
+.tutorial__title h2 {
   font-size: 1.6em;
   font-weight: 700;
 }
@@ -392,7 +392,7 @@ footer {
   width: 100%;
   display: flex;
 }
-.restaurant-title h1 {
+.restaurant-title h2 {
   font-size: 1.6em;
   font-weight: 700;
 }
@@ -451,7 +451,7 @@ footer {
   align-items: center;
   margin-top: 10px;
 }
-.section-menu-title h1 {
+.section-menu-title h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1.7em;
 }
@@ -580,8 +580,8 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-.card__information h1 {
-  color: black;
+.card__information h3 {
+  color: #000000;
   font-weight: 700;
   font-size: 1.15em;
   padding: 3px 0;
