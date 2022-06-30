@@ -56,9 +56,33 @@
         color: black;
         padding: 3px 0;
     }
-    i {
-        font-size: larger;
-        color: black;
+}
+
+.card__like-icon {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    &--unliked {
+        position: absolute;
+        font-size: xx-large;
+        right: 0;
+        top: 0;
+        color: #000000;
+    }
+    &--liked {
+        position: absolute;
+        font-size: xx-large;
+        color: transparent;
+        background-image: linear-gradient(to bottom left, $color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+        right: 0;
+        top: 0;
+    }
+    &:hover &--liked {
+        opacity: 1;
     }
 }
 
