@@ -58,3 +58,20 @@
         transform: rotate(90deg);
     }
 }
+
+// apparition des plats au chargement de la page
+@keyframes appear {
+    0% {
+        transform: translateY(35px);
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -73,6 +73,36 @@
         border-radius: 20px;
         @include box-shadow;
         display: flex;
+        transform: translateY(35px);
+        opacity: 0;
+        animation: appear 700ms ease-in-out forwards;
+        &--2 {
+            animation-delay: 100ms;
+        }
+        &--3 {
+            animation-delay: 200ms;
+        }
+        &--4 {
+            animation-delay: 300ms;
+        }
+        &--5 {
+            animation-delay: 400ms;
+        }
+        &--6 {
+            animation-delay: 500ms;
+        }
+        &--7 {
+            animation-delay: 600ms;
+        }
+        &--8 {
+            animation-delay: 700ms;
+        }
+        &--9 {
+            animation-delay: 800ms;
+        }
+        &--10 {
+            animation-delay: 900ms;
+        }
     }
     &__container {
         height: 100%;
