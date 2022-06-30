@@ -66,15 +66,22 @@
 .section-menu-list {
     &__choice-card {
         overflow: hidden;
+        position: relative;
         height: 70px;
         width: 100%;
         background-color: #ffffff;
         border-radius: 20px;
-        padding: 10px;
         @include box-shadow;
+        display: flex;
+    }
+    &__container {
+        height: 100%;
+        width: 100%;
+        padding: 10px 15px 5px 15px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        transition: all 350ms ease-in-out;
     }
     &__card-text {
         display: flex;
@@ -107,6 +114,30 @@
             color: #000000;
             font-weight: 700;
             font-size: 1em;
+            padding-bottom: 7px;
         }
+    }
+    &__valid {
+        position: absolute;
+        height: 70px;
+        width: 15%;
+        right: -16%;
+        background-color: $color-tertiary;
+        transition: all 350ms ease-in-out;
+        @include display-center;
+        &--icon {
+            color: #ffffff;
+            font-size: x-large;
+            animation: icon-rotate-return 450ms ease-in-out forwards;
+        }
+    }
+    &__choice-card:hover &__container {
+        width: 85%;
+    }
+    &__choice-card:hover &__valid {
+        transform: translateX(-100%);
+    }
+    &__choice-card:hover &__valid--icon {
+        animation: icon-rotate 450ms ease-in-out forwards;
     }
 }
